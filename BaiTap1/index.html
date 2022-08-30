@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ví dụ HTML</title>
+    <link rel="icon" href="/icon/favicon.ico" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-size: 100%;
+      }
+      div {
+        margin: 2px 0px 0px 0px;
+      }
+      .logo {
+        margin: 20px 0px 0px 0px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid blue;
+        border-collapse: collapse;
+        padding: 2px;
+      }
+      th {
+        background-color: rgb(173, 173, 173);
+      }
+      .map {
+        margin: 20px 0px 0px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th colspan="4" style="background-color: rgb(114, 113, 113)">NHÓM 8</th>
+      </tr>
+      <tr>
+        <th>STT</th>
+        <th>MSSV</th>
+        <th>Họ tên</th>
+        <th>Ghi chú</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>B2005670</td>
+        <td>Trần Thái Đăng</td>
+        <td rowspan="5" style="background-color: rgb(173, 173, 173)"></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>B2014552</td>
+        <td>Dương Hoài Ân</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>B2014790</td>
+        <td>Mai Lê Anh Thịnh</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>B2014553</td>
+        <td>Phạm Nguyễn Gia Bảo</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>B2014726</td>
+        <td>Tạ Thị Hồng Anh</td>
+      </tr>
+    </table>
+    <div class="logo">
+      <img src="/icon/logo.png" alt="Logo CTU" width="60px" />
+      Nhóm <span style="font-weight: bold">CTU</span>
+      <span style="color: red">&trade;</span>
+    </div>
+    <div>
+      <span
+        style="
+          color: green;
+          font-style: italic;
+          font-size: 160%;
+          font-weight: bold;
+        "
+        >&dollar;</span
+      >
+      Bảng giá <sup>thiết kế</sup> vui lòng liên hệ
+      <span style="background-color: yellow">Số ĐT</span>
+    </div>
+    <div>
+      <span style="color: blue">&phone;</span>
+      <span style="font-weight: bold; font-style: italic">0939.123456</span> -
+      <span style="text-decoration: line-through">0939.778899</span>
+    </div>
+    <div class="map">
+      <img src="/icon/workplace.jpg" alt="workplace" usemap="#workplace" />
+      <map name="workplace">
+        <area
+          shape="rect"
+          coords="32,41,271,346"
+          href="https://www.google.com/aclk?sa=l&ai=DChcSEwje5_nSiu75AhUOWmAKHV4ZBL0YABABGgJ0bQ&ae=2&sig=AOD64_378ZbJXAkAxjSLthh-xCScPspROA&adurl&ctype=5&ved=2ahUKEwi4gO_Siu75AhUSNKYKHQdQBPkQvhd6BAgBEEk"
+          alt="macbook"
+          target="_blank"
+        />
+        <area
+          shape="rect"
+          coords="291,173,335,244"
+          href="https://cellphones.com.vn/iphone-13.html"
+          alt="iphone"
+          target="_blank"
+        />
+        <area
+          shape="circle"
+          coords="337,302,40"
+          href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F4%2F45%2FA_small_cup_of_coffee.JPG%2F1200px-A_small_cup_of_coffee.JPG&imgrefurl=https%3A%2F%2Fvi.wikipedia.org%2Fwiki%2FC%25C3%25A0_ph%25C3%25AA&tbnid=tbhiUm3Se6fAnM&vet=12ahUKEwjgtZHYjO75AhUPfZQKHSBwBH4QMygAegUIARDAAQ..i&docid=iIqua1zG4QSaIM&w=1200&h=900&q=coffe&ved=2ahUKEwjgtZHYjO75AhUPfZQKHSBwBH4QMygAegUIARDAAQ"
+          alt="coffee"
+          target="_blank"
+        />
+      </map>
+    </div>
+  </body>
+</html>
