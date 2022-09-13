@@ -38,31 +38,41 @@
     </nav>
   </header>
   <main>
+    <h1>Liên hệ</h1>
+    <img src="./images/lienhe/check-in.png" alt="location">
+    <h1>Địa chỉ: 0123, Tòa Nhà ABC, TP.Cần Thơ</h1>
+    <p>Nếu bạn có góp ý, vui lòng liên hệ bằng thư điện tử hoặc sử dụng biểu mẫu bên dưới. Xin cảm ơn</p>
     <form action="" method="post" enctype="application/x-www-form-urlencoded">
       <fieldset style="border: 1px solid black;">
-        <legend>ĐĂNG NHẬP</legend>
+        <legend>Góp ý</legend>
         <table>
           <tr>
-            <td colspan="2"><img src="./images/dangnhap/userlogin.png" alt="login"></td>
+            <td><label for="fullname">Họ Tên:</label></td>
+            <td><input type="text" name="fullname" id="fullname" placeholder="Vui lòng nhập Họ tên của bạn"></td>
           </tr>
           <tr>
-            <td><label for="email">Email</label></td>
-            <td><input type="text" id="email" name="email" placeholder="nhập email"></td>
+            <td><label for="email">Email:</label></td>
+            <td><input type="text" name="email" id="email" placeholder="Vui lòng nhập địa chỉ email"></td>
           </tr>
           <tr>
-            <td><label for="password">Mật khẩu</label></td>
-            <td><input type="password" id="password" name="password" placeholder="Nhập mật khẩu"></td>
+            <td><label for="chude">Chủ đề:</label></td>
+            <td>
+              <select name="chude" id="chude" size="1">
+                <option value="spdv">Về Sản phẩm/ Dịch vụ</option>
+                <option value="udtv">Về Ưu đãi thành viên</option>
+                <option value="ttd">Về Tin tuyển dụng</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><label for="content">Nội dung</label></td>
           </tr>
           <tr>
             <td colspan="2">
-              <span style="margin-left: 100px;"><input type="submit" value="Đăng Nhập">
-                <input type="reset" value="Hủy"></span>
-            </td>
+              <textarea name="content" id="content" cols="50" rows="7" placeholder="Nội dung cần liên hệ"></textarea>
           </tr>
           <tr>
-            <td colspan="2">Bạn quên <a href="">Mật Khẩu?</a> <input type="checkbox" name="remember" id="remember">
-              <label for="remember">Ghi nhớ cho lần đăng nhập sau</label>
-            </td>
+            <td colspan="2"><input type="submit" value="Gửi"></td>
           </tr>
         </table>
       </fieldset>
