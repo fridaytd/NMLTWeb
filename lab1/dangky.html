@@ -38,9 +38,50 @@
     </nav>
   </header>
   <main>
-    <fieldset>
-      <legend>ĐĂNG KÝ</legend>
-    </fieldset>
+    <form action="" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>ĐĂNG KÝ</legend>
+        <table>
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td><input type="text" id="email" name="email" placeholder="Vui lòng nhập email"></td>
+          </tr>
+          <tr>
+            <td><label for="password">Mật khẩu</label></td>
+            <td><input type="password" id="password" name="password" placeholder="Vui lòng nhập mật khẩu"></td>
+          </tr>
+          <tr>
+            <td><label for="passwordagain">Nhập lại mật khẩu</label></td>
+            <td><input type="password" id="passwordagain" name="passwordagain" placeholder="Vui lòng nhập mật khẩu">
+            </td>
+          </tr>
+          <tr>
+            <td>Cấp độ thành viên</td>
+            <td><input type="radio" name="memberType" id="bac" value="bac">
+              <label for="bac">Bạc</label>
+              <input type="radio" name="memberType" id="vang" value="vang">
+              <label for="bac">Vàng</label>
+              <input type="radio" name="memberType" id="bachkim" value="bachkim">
+              <label for="bac">Bạch kim</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Ảnh đại diện</td>
+            <td><input type="file" accept=".png, .jpg"></td>
+          </tr>
+          <tr>
+            <td colspan="2">Thông qua việc tạo tài khoản, bạn đồng ý với <a href="./">Điều khoản & Quyền riêng tư của
+                chúng
+                tôi</a></td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="reset" value="Hủy">
+              <input type="submit" value="Đăng kí">
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
   </main>
   <footer>
     &copy; 2021 Bản quyền thuộc về FreeezeVN.
