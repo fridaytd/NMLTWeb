@@ -1,80 +1,85 @@
 <!DOCTYPE html>
 <html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trang chủ</title>
+    <link rel="shotcut icon" href="./images/favicon.ico" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Trang chủ</title>
-  <link rel="shotcut icon" href="./images/favicon.ico" />
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    h1,
-    h2 {
-      text-transform: capitalize;
-    }
-
-    nav li {
-      display: inline;
-      margin-right: 1%;
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <a href="./trangchu.html"><img src="./images/logo.png" alt="logo" id="logo" /></a>
-    <nav>
-      <ul>
-        <li><a href="./trangchu.html">Trang chủ</a></li>
-        <li><a href="./gioithieu.html">Giới thiệu</a></li>
-        <li><a href="./sanpham.html">Sản phẩm</a></li>
-        <li><a href="./tintuc.html">Tin tức</a></li>
-        <li><a href="./dangnhap.html">Đăng nhập</a></li>
-        <li><a href="./dangky.html">Đăng kí</a></li>
-        <li><a href="./lienhe.html">Liên hệ</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <form action="" method="post" enctype="application/x-www-form-urlencoded">
-      <fieldset style="border: 1px solid black;">
-        <legend>ĐĂNG NHẬP</legend>
-        <table>
-          <tr>
-            <td colspan="2"><img src="./images/dangnhap/userlogin.png" alt="login"></td>
-          </tr>
-          <tr>
-            <td><label for="email">Email</label></td>
-            <td><input type="text" id="email" name="email" placeholder="nhập email"></td>
-          </tr>
-          <tr>
-            <td><label for="password">Mật khẩu</label></td>
-            <td><input type="password" id="password" name="password" placeholder="Nhập mật khẩu"></td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <span style="margin-left: 100px;"><input type="submit" value="Đăng Nhập">
-                <input type="reset" value="Hủy"></span>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2">Bạn quên <a href="">Mật Khẩu?</a> <input type="checkbox" name="remember" id="remember">
-              <label for="remember">Ghi nhớ cho lần đăng nhập sau</label>
-            </td>
-          </tr>
-        </table>
-      </fieldset>
-    </form>
-  </main>
-  <footer>
-    &copy; 2021 Bản quyền thuộc về FreeezeVN.
-    <a href="https://vi-vn.facebook.com" target="_blank">Facebook</a>
-    <a href="https://twitter.com/" target="_blank">Twitter</a>
-    <a href="https://www.pinterest.com/" target="_blank">Pinterest</a>.
-    <a href="#logo">Về đầu trang</a>
-  </footer>
-</body>
-
+  <body>
+    <header>
+      <a href="./trangchu.html"
+        ><img src="./images/logo.png" alt="logo" id="logo"
+      /></a>
+      <nav>
+        <ul>
+          <li><a href="./trangchu.html">Trang chủ</a></li>
+          <li><a href="./gioithieu.html">Giới thiệu</a></li>
+          <li><a href="./sanpham.html">Sản phẩm</a></li>
+          <li><a href="./tintuc.html">Tin tức</a></li>
+          <li><a href="./dangnhap.html">Đăng nhập</a></li>
+          <li><a href="./dangky.html">Đăng kí</a></li>
+          <li><a href="./lienhe.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form action="" method="post" enctype="application/x-www-form-urlencoded">
+        <fieldset style="border: 1px solid black">
+          <legend>ĐĂNG NHẬP</legend>
+          <table>
+            <tr>
+              <td colspan="2">
+                <img src="./images/dangnhap/userlogin.png" alt="login" />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="email">Email</label></td>
+              <td>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="nhập email"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="password">Mật khẩu</label></td>
+              <td>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Nhập mật khẩu"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <span style="margin-left: 100px"
+                  ><input type="submit" value="Đăng Nhập" />
+                  <input type="reset" value="Hủy"
+                /></span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                Bạn quên <a href="">Mật Khẩu?</a>
+                <input type="checkbox" name="remember" id="remember" />
+                <label for="remember">Ghi nhớ cho lần đăng nhập sau</label>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      &copy; 2021 Bản quyền thuộc về FreeezeVN.
+      <a href="https://vi-vn.facebook.com" target="_blank">Facebook</a>
+      <a href="https://twitter.com/" target="_blank">Twitter</a>
+      <a href="https://www.pinterest.com/" target="_blank">Pinterest</a>.
+      <a href="#logo">Về đầu trang</a>
+    </footer>
+  </body>
 </html>
