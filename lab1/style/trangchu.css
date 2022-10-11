@@ -1,1 +1,71 @@
 @import url(./style.css);
+
+h1 {
+    margin: 12px 0px 16px 0px;
+    text-transform: uppercase;
+    color: #f90b6d;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 300;
+    line-height: 28px;
+}
+h2 {
+    margin: 5px 0px 10px 0px;
+    color: #f90b6d;
+    font-size: 24px;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+h3 {
+    margin: 5px 0px 10px 0px;
+    color: #f90b6d;
+    font-size: 20px;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 300;
+    line-height: 24px;
+}
+section {
+    margin-bottom: 5px;
+    padding: 0px 5px;
+}
+#yogurt {
+    width: 30%;
+    float: left;
+}
+#p1 {
+    margin-top: 0px;
+    width: 69%;
+    float: left;
+}
+#video {
+    width: 30%;
+    float: right;
+}
+#p2 {
+    margin-top: 0px;
+    margin-bottom: 150px;
+    width: 69%;
+    float:none;
+}
+
+.ctn1,.ctn2 {
+    width: 49%;
+    float: left;
+}
+.dat-hang-ngay {
+    margin-bottom: 5px;
+    text-align: center;
+}
+.dat-hang-ngay > div {
+    display: inline-block;
+    width: 24%;
+    border: 1px solid #ed4190;
+    border-radius: 5px;
+    padding: 5px 1px 1px 1px;
+}
+.dat-hang-ngay img {
+    width: 100px;
+}

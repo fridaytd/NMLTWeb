@@ -41,6 +41,7 @@ main.three-columes {
 }
 
 header {
+    grid-area: header-cell;
     border: 1px solid #ccc7c8;
     border-radius: 5px;
     padding: 0px 5px;
@@ -49,6 +50,7 @@ header {
 }
 
 nav {
+    grid-area: nav-cell;
     margin: 20px;
 }
  .link-tag {
@@ -160,6 +162,7 @@ nav {
  }
 
 footer {
+    grid-area: footer-cell;
     margin-top: 2px;
     border: 1px solid #ccc7c8;
     border-radius: 5px;
@@ -173,4 +176,102 @@ footer {
     right: 10px;
     bottom: 10px;
     z-index: 100;
+}
+
+h1 {
+    position: relative;
+    margin: 12px 0px 16px 0px;
+    text-transform: uppercase;
+    color: #f90b6d;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 300;
+    line-height: 28px;
+}
+h1::after{
+    content: "";
+    width: 200px;
+    height: 3px;
+    transform: skewX(-12deg) translateX(50%);
+    background-image: radial-gradient(#cddc39, #fff);
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+h2 {
+    margin: 5px 0px 10px 0px;
+    color: #f90b6d;
+    font-size: 24px;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+h3 {
+    margin: 5px 0px 10px 0px;
+    color: #f90b6d;
+    font-size: 20px;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 300;
+    line-height: 24px;
+}
+section {
+    margin-bottom: 5px;
+    padding: 0px 5px;
+}
+#yogurt {
+    width: 30%;
+    float: left;
+}
+#p1 {
+    margin-top: 0px;
+    width: 69%;
+    float: left;
+}
+#video {
+    width: 30%;
+    float: right;
+}
+#p2 {
+    margin-top: 0px;
+    margin-bottom: 150px;
+    width: 69%;
+    float:none;
+}
+
+.ctn1,.ctn2 {
+    width: 49%;
+    float: left;
+}
+.dat-hang-ngay {
+    margin-bottom: 5px;
+    text-align: center;
+}
+.dat-hang-ngay > div {
+    display: inline-block;
+    width: 24%;
+    border: 1px solid #ed4190;
+    border-radius: 5px;
+    padding: 5px 1px 1px 1px;
+}
+.dat-hang-ngay img {
+    width: 100px;
+}
+
+.spcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px;
+}
+
+.spcontainer > div {
+    margin: 3px;
+    border: 1 solid #dbd7d9;
+    padding: 0px;
+    text-align: center;
+    background-image: linear-gradient(to top, #cddc39 0%, #fff 10%);
+}
+.spcontainer  p {
+    text-align: left;
 }
