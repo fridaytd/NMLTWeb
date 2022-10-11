@@ -77,3 +77,100 @@ nav {
     text-decoration: none;
     box-shadow: 0px 0px 3px 0px #00000066, 0px 0px 2px 0px #0000004d;
  }
+
+ .img1 {
+    height: 100px;
+    position: absolute;
+    top: -30px;
+    animation-name: img1;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+ }
+
+ @keyframes img1 {
+    from {
+        left: 80%;
+    }
+    to {
+        left: 30%;
+    }
+ }
+
+ .img2 {
+    height: 70px;
+    position: absolute;
+    top: -5px;
+    animation-name: img2;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+ }
+
+ @keyframes img2 {
+    from {
+        left: 80%;
+    }
+    to {
+        left: 45%;
+    }
+ }
+
+ .img3 {
+    height: 80px;
+    position: absolute;
+    top: 0px;
+    animation-name: img3;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+ }
+
+ @keyframes img3 {
+    from {
+        left: 80%;
+    }
+    to {
+        left: 63%;
+    }
+ }
+
+ .search {
+    position: absolute;
+    top: 70px;
+    left: 1040px;
+ }
+
+ .fa-search {
+    padding: 4px;
+    min-width: 30px;
+    background-color: #cddc39;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+ }
+ .fa-shopping-cart {
+    padding: 4px;
+    min-width: 30px;
+    background-color: #cddc39;
+    color: #ed4190;
+    text-align: center;
+    cursor: pointer;
+ }
+
+ main img {
+    border-radius: 5px;
+ }
+
+footer {
+    margin-top: 2px;
+    border: 1px solid #ccc7c8;
+    border-radius: 5px;
+    padding: 0px 5px;
+    color: #000;
+    text-align: center;
+}
+.top {
+    width: 70px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 100;
+}
