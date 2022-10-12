@@ -2,8 +2,24 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <title>Trang chủ</title>
-    <link rel="shotcut icon" href="./images/favicon.ico" />
+    <title>Giới thiệu</title>
+    <link
+    href="images/favicon.ico"
+    rel="shortcut icon"
+    type="image/vnd.microsoft.icon"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+
+  <link rel="shotcut icon" href="./images/favicon.ico" />
+  <link rel="stylesheet" href="./style/style.css" />
+</head>
   </head>
 
   <body>
@@ -11,24 +27,36 @@
       <a href="./trangchu.html"
         ><img src="./images/logo.png" alt="logo" id="logo"
       /></a>
-      <nav>
-        <a href="./trangchu.html">Trang chủ</a>
-        <a href="./gioithieu.html">Giới thiệu</a>
-        <a href="./sanpham.html">Sản phẩm</a>
-        <a href="./tintuc.html">Tin tức</a>
-        <a href="./dangnhap.html">Đăng nhập</a>
-        <a href="./dangky.html">Đăng kí</a>
-        <a href="./lienhe.html">Liên hệ</a>
+      <nav class="navi">
+        <div>
+          <a class="link-tag" href="./trangchu.html">Trang chủ</a>
+          <a class="link-tag" href="./gioithieu.html">Giới thiệu</a>
+          <a class="link-tag" href="./sanpham.html">Sản phẩm</a>
+          <a class="link-tag" href="./tintuc.html">Tin tức</a>
+          <a class="link-tag" href="./dangnhap.html">Đăng nhập</a>
+          <a class="link-tag" href="./dangky.html">Đăng kí</a>
+          <a class="link-tag" href="./lienhe.html">Liên hệ</a>
+        </div>
+
+        <div class="search">
+          <input type="text" placeholder="Nhập nội dung cần tìm ..." />
+          <i class="fa fa-search"></i>
+          <i class="fa fa-shopping-cart"></i>
+        </div>
       </nav>
-      <img src="./data/images/header-img1.png" alt="img1" class="img1">
-      <img src="./data/images/header-img2.png" alt="img2" class="img2">
-      <img src="./data/images/header-img3.png" alt="img3" class="img3">
+      <img src="./data/images/header-img1.png" alt="img1" class="img1" />
+      <img src="./data/images/header-img2.png" alt="img2" class="img2" />
+      <img src="./data/images/header-img3.png" alt="img3" class="img3" />
     </header>
-    <main>
-      <section>
+    <main class="two-columes-left">
+      <article>
         <h1>Giới thiệu</h1>
-        <img src="./images/gioithieu/bg-header-about.jpg" alt="introduce" />
-        <h2>Câu Chuyện Thương Hiệu</h2>
+        <img
+          src="./images/gioithieu/bg-header-about.jpg"
+          alt="introduce"
+          width="100%"
+        />
+        <h1>Câu Chuyện Thương Hiệu</h1>
         <p>
           Khi dự án "Sữa chua trân châu" được đặt lên bàn, có rất nhiều câu hỏi
           bủa vây lấy chúng tôi: Làm sao đê nhân bản một món ăn “đặc sản” nhưng
@@ -39,7 +67,7 @@
           chùn bước. Nhưng chỉ cân một lý do đủ mạnh đê tiếp tục, lý do mà chúng
           tôi bắt đâu.
         </p>
-        <h2>Thực Hiện Ước Mơ</h2>
+        <h1>Thực Hiện Ước Mơ</h1>
         <p>
           Anh Phạm Tuấn, được sinh ra trong gia đình có truyền thống làm sữa
           chua trân châu từ những năm 1990. Món ăn thơm ngon này đã nuôi đường
@@ -59,7 +87,7 @@
           lý tưởng sống, cùng "phải lòng" với sữa chua trân châu, cùng một ước
           mơ biến món ăn địa phương này trở thành niềm tự hào dân tộc.
         </p>
-        <h2>Khởi Đầu Thuận Lợi</h2>
+        <h1>Khởi Đầu Thuận Lợi</h1>
         <p>
           Khác với nhiều thương hiệu F&B có khởi đầu không mấy dễ dàng, Sữa chua
           trân châu lại được khách hàng đón nhận và ủng hộ ngay từ khi ra mắt
@@ -79,21 +107,29 @@
           chỉnh phục được tất cả các khách hàng, từ em bé đến phụ huynh, từ các
           bạn trẻ đến cả những người lớn tuôi.
         </p>
-      </section>
-      <section>
+      </article>
+      <aside>
         <h1>Hãy đăng kí thành viên ngay hôm nay</h1>
         <p>
           Thành viên được hưởng nhiều ưu đi: tham gia khóa học miễn phí, tham
           gia các cuộc thi, nhận tài liệu các món mới...
         </p>
-      </section>
+      </aside>
     </main>
     <footer>
       &copy; 2021 Bản quyền thuộc về FreeezeVN.
-      <a href="https://vi-vn.facebook.com" target="_blank">Facebook</a>
-      <a href="https://twitter.com/" target="_blank">Twitter</a>
-      <a href="https://www.pinterest.com/" target="_blank">Pinterest</a>.
-      <a href="#logo">Về đầu trang</a>
+      <a href="https://vi-vn.facebook.com" target="_blank"
+        ><i class="fab fa-facebook-f" style="color: #ed4190"></i
+      ></a>
+      <a href="https://twitter.com/" target="_blank"
+        ><i class="fab fa-twitter" style="color: #ed4190"></i
+      ></a>
+      <a href="https://www.pinterest.com/" target="_blank"
+        ><i class="fab fa-pinterest-square" style="color: #ed4190"></i></a
+      >.
+      <a href="#logo"
+        ><img src="./data/images/top.png" alt="top" class="top"
+      /></a>
     </footer>
   </body>
 </html>

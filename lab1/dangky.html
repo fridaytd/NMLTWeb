@@ -2,35 +2,57 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <title>Trang chủ</title>
+    <title>Đăng ký</title>
+    <link
+      href="images/favicon.ico"
+      rel="shortcut icon"
+      type="image/vnd.microsoft.icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
     <link rel="shotcut icon" href="./images/favicon.ico" />
-  </head>
+    <link rel="stylesheet" href="./style/style.css" />
 
   <body>
     <header>
       <a href="./trangchu.html"
         ><img src="./images/logo.png" alt="logo" id="logo"
       /></a>
-      <nav>
-        <a href="./trangchu.html">Trang chủ</a>
-        <a href="./gioithieu.html">Giới thiệu</a>
-        <a href="./sanpham.html">Sản phẩm</a>
-        <a href="./tintuc.html">Tin tức</a>
-        <a href="./dangnhap.html">Đăng nhập</a>
-        <a href="./dangky.html">Đăng kí</a>
-        <a href="./lienhe.html">Liên hệ</a>
+      <nav class="navi">
+        <div>
+          <a class="link-tag" href="./trangchu.html">Trang chủ</a>
+          <a class="link-tag" href="./gioithieu.html">Giới thiệu</a>
+          <a class="link-tag" href="./sanpham.html">Sản phẩm</a>
+          <a class="link-tag" href="./tintuc.html">Tin tức</a>
+          <a class="link-tag" href="./dangnhap.html">Đăng nhập</a>
+          <a class="link-tag" href="./dangky.html">Đăng kí</a>
+          <a class="link-tag" href="./lienhe.html">Liên hệ</a>
+        </div>
+
+        <div class="search">
+          <input type="text" placeholder="Nhập nội dung cần tìm ..." />
+          <i class="fa fa-search"></i>
+          <i class="fa fa-shopping-cart"></i>
+        </div>
       </nav>
-      <img src="./data/images/header-img1.png" alt="img1" class="img1">
-      <img src="./data/images/header-img2.png" alt="img2" class="img2">
-      <img src="./data/images/header-img3.png" alt="img3" class="img3">
+      <img src="./data/images/header-img1.png" alt="img1" class="img1" />
+      <img src="./data/images/header-img2.png" alt="img2" class="img2" />
+      <img src="./data/images/header-img3.png" alt="img3" class="img3" />
     </header>
     <main>
+      <h1>ĐĂNG KÝ</h1>
       <form action="" method="post" enctype="multipart/form-data">
-        <fieldset style="border: 1px solid black">
-          <legend>ĐĂNG KÝ</legend>
-          <table>
+        <fieldset class="form-container" >
+          <table style="width: 500px;">
             <tr>
-              <td><label for="email">Email</label></td>
+              <td><label for="email"><i class="fas fa-envelope"></i></label></td>
               <td>
                 <input
                   type="text"
@@ -41,7 +63,7 @@
               </td>
             </tr>
             <tr>
-              <td><label for="password">Mật khẩu</label></td>
+              <td><label for="password"><i class="fas fa-key"></i></label></td>
               <td>
                 <input
                   type="password"
@@ -52,7 +74,7 @@
               </td>
             </tr>
             <tr>
-              <td><label for="passwordagain">Nhập lại mật khẩu</label></td>
+              <td><label for="passwordagain"><i class="fas fa-key"></i></label></td>
               <td>
                 <input
                   type="password"
@@ -63,7 +85,7 @@
               </td>
             </tr>
             <tr>
-              <td>Cấp độ thành viên</td>
+              <td style="width: 35px;"><i class="fas fa-users"></i></td>
               <td>
                 <input type="radio" name="memberType" id="bac" value="bac" />
                 <label for="bac">Bạc</label>
@@ -79,7 +101,7 @@
               </td>
             </tr>
             <tr>
-              <td>Ảnh đại diện</td>
+              <td><i class="fas fa-id-badge"></i></td>
               <td><input type="file" accept=".png, .jpg" /></td>
             </tr>
             <tr>
@@ -100,10 +122,18 @@
     </main>
     <footer>
       &copy; 2021 Bản quyền thuộc về FreeezeVN.
-      <a href="https://vi-vn.facebook.com" target="_blank">Facebook</a>
-      <a href="https://twitter.com/" target="_blank">Twitter</a>
-      <a href="https://www.pinterest.com/" target="_blank">Pinterest</a>.
-      <a href="#logo">Về đầu trang</a>
+      <a href="https://vi-vn.facebook.com" target="_blank"
+        ><i class="fab fa-facebook-f" style="color: #ed4190"></i
+      ></a>
+      <a href="https://twitter.com/" target="_blank"
+        ><i class="fab fa-twitter" style="color: #ed4190"></i
+      ></a>
+      <a href="https://www.pinterest.com/" target="_blank"
+        ><i class="fab fa-pinterest-square" style="color: #ed4190"></i></a
+      >.
+      <a href="#logo"
+        ><img src="./data/images/top.png" alt="top" class="top"
+      /></a>
     </footer>
   </body>
 </html>

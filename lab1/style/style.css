@@ -33,11 +33,11 @@ main.one-colume {
 }
 main.two-columes-right {
     grid-template-columns: 1fr 3fr;
-    grid-template-areas: "left-cell article-cell";
+    grid-template-areas: "left-cell  article-cell article-cell article-cell";
 }
 main.two-columes-left {
     grid-template-columns: 3fr 1fr;
-    grid-template-areas: "article-cell right-cell";
+    grid-template-areas: "article-cell article-cell article-cell right-cell";
 }
 
 main.three-columes {
@@ -170,6 +170,9 @@ nav {
  }
 
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-area: footer-cell;
     margin-top: 2px;
     border: 1px solid #ccc7c8;
@@ -177,6 +180,7 @@ footer {
     padding: 0px 5px;
     color: #000;
     text-align: center;
+    height: 70px;
 }
 .top {
     width: 70px;
@@ -286,4 +290,57 @@ h3 {
 .sp-container p {
     text-align: justify;
     padding: 5px;
+}
+
+.fas {
+    padding: 4px;
+    min-width: 30px;
+    background-color: #cddc39;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fa-map-marker-alt {
+    padding: 4px;
+    min-width: 30px;
+    background-color: #cddc39;
+    color: #ed4190;
+    text-align: center;
+    cursor: pointer;
+}
+
+.form-container {
+    border: none;
+    display: grid;
+    justify-content: center;
+}
+#gopy-table td {
+    vertical-align: bottom;
+}
+
+.tin-tuc-article {
+    grid-area: article-cell;
+}
+
+.tin-tuc-aside {
+    grid-area: left-cell;
+}
+
+.tin-tuc-container {
+    display: grid;
+    grid-template-areas: "p p img";
+    gap: 10px;
+}
+
+.tin-tuc-container > p{
+    grid-area: p;
+    text-align: justify;
+}
+
+.tin-tuc-container > img{
+    grid-area: img;
+}
+table{
+    border-spacing: 1px;
 }
