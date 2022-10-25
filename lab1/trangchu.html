@@ -33,15 +33,15 @@
         </div>
 
         <div class="search">
-          <form action="./timkiem.html" method="get">
+          <form action="./timkiem.html" method="get" name="search">
             <input
               type="text"
-              name="search"
-              id="search"
+              name="txt"
+              id="txt_search"
               placeholder="Nhập nội dung cần tìm ..."
               autocomplete="off"
             />
-            <i class="fa fa-search"></i>
+            <i class="fa fa-search" onclick="sent_data()"></i>
             <i class="fa fa-shopping-cart"></i>
           </form>
           <script src="./script.js"></script>
