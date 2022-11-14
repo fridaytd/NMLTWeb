@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sản phẩm</title>
+    <link
+      href="images/favicon.ico"
+      rel="shortcut icon"
+      type="image/vnd.microsoft.icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shotcut icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <style>
+    #cardtb td,
+    th {
+      padding: 10px;
+      border: solid black 1px;
+    }
+    #cardtb {
+      border: solid black 1px;
+      border-collapse: collapse;
+    }
+    #sumTien {
+      text-align: right;
+    }
+    .icon-pink {
+      padding: 4px;
+      min-width: 30px;
+      background-color: #cddc39;
+      color: #ed4190;
+      text-align: center;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <header>
+      <a href="./trangchu.html"
+        ><img src="./images/logo.png" alt="logo" id="logo"
+      /></a>
+      <nav class="navi">
+        <div>
+          <a class="link-tag" href="./trangchu.html">Trang chủ</a>
+          <a class="link-tag" href="./gioithieu.html">Giới thiệu</a>
+          <a class="link-tag" href="./sanpham.html">Sản phẩm</a>
+          <a class="link-tag" href="./tintuc.html">Tin tức</a>
+          <a class="link-tag" href="./dangnhap.html">Đăng nhập</a>
+          <a class="link-tag" href="./dangky.html">Đăng kí</a>
+          <a class="link-tag" href="./lienhe.html">Liên hệ</a>
+        </div>
+
+        <div class="search">
+          <input type="text" placeholder="Nhập nội dung cần tìm ..." />
+          <i class="fa fa-search"></i>
+          <i class="fa fa-shopping-cart"></i>
+        </div>
+      </nav>
+      <img src="./data/images/header-img1.png" alt="img1" class="img1" />
+      <img src="./data/images/header-img2.png" alt="img2" class="img2" />
+      <img src="./data/images/header-img3.png" alt="img3" class="img3" />
+    </header>
+    <main>
+      <h1>Chi tiết đơn hàng</h1>
+      <table id="cardtb">
+        <tr>
+          <th>Hình SP</th>
+          <th>Tên SP</th>
+          <th>Số lượng</th>
+          <th>Giá</th>
+          <th>Thành Tiền</th>
+          <th></th>
+        </tr>
+      </table>
+    </main>
+    <footer>
+      &copy; 2021 Bản quyền thuộc về FreeezeVN.
+      <a href="https://vi-vn.facebook.com" target="_blank"
+        ><i class="fa fa-facebook-f" style="color: #ed4190"></i
+      ></a>
+      <a href="https://twitter.com/" target="_blank"
+        ><i class="fa fa-twitter" style="color: #ed4190"></i
+      ></a>
+      <a href="https://www.pinterest.com/" target="_blank"
+        ><i class="fa fa-pinterest-square" style="color: #ed4190"></i></a
+      >.
+      <a href="#logo"
+        ><img src="./data/images/top.png" alt="top" class="top"
+      /></a>
+    </footer>
+    <script src="./dathang.js"></script>
+  </body>
+</html>

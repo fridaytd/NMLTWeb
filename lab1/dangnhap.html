@@ -48,7 +48,12 @@
       <img src="./data/images/header-img3.png" alt="img3" class="img3" />
     </header>
     <main>
-      <form action="" method="post" enctype="application/x-www-form-urlencoded">
+      <form
+        action=""
+        method="post"
+        enctype="application/x-www-form-urlencoded"
+        id="dangNhap"
+      >
         <fieldset class="form-container">
           <h1>ĐĂNG NHẬP</h1>
           <table>
@@ -121,5 +126,16 @@
         ><img src="./data/images/top.png" alt="top" class="top"
       /></a>
     </footer>
+    <script src="./validator.js"></script>
+    <script>
+      Validator({
+        form: "#dangNhap",
+        rules: [
+          Validator.isRequired("#email"),
+          Validator.isEmail("#email"),
+          Validator.isRequired("#password"),
+        ],
+      });
+    </script>
   </body>
 </html>

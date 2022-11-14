@@ -48,7 +48,7 @@
     </header>
     <main>
       <h1>ĐĂNG KÝ</h1>
-      <form action="" method="post" enctype="multipart/form-data">
+      <form id="dangKy" action="" method="post" enctype="multipart/form-data">
         <fieldset class="form-container" >
           <table style="width: 500px;">
             <tr>
@@ -135,5 +135,19 @@
         ><img src="./data/images/top.png" alt="top" class="top"
       /></a>
     </footer>
+    <script src="./validator.js"></script>
+    <script>
+      Validator({
+        form: "#dangKy",
+        rules: [
+          Validator.isRequired("#email"),
+          Validator.isEmail('#email'),
+          Validator.isRequired("#password"),
+          Validator.isPassword('#password'),
+          Validator.isRequired("#passwordagain"),
+          Validator.isComfirmPassword("#passwordagain")
+        ]
+      })
+    </script>
   </body>
 </html>
