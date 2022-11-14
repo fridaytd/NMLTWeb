@@ -38,9 +38,18 @@
         </div>
 
         <div class="search">
-          <input type="text" placeholder="Nhập nội dung cần tìm ..." />
-          <i class="fa fa-search"></i>
-          <i class="fa fa-shopping-cart"></i>
+          <form action="./timkiem.html" method="get" name="search">
+            <input
+              type="text"
+              name="txt"
+              id="txt_search"
+              placeholder="Nhập nội dung cần tìm ..."
+              autocomplete="off"
+            />
+            <i class="fa fa-search" onclick="sent_data()"></i>
+            <i class="fa fa-shopping-cart"></i>
+          </form>
+          <script src="./script.js"></script>
         </div>
       </nav>
       <img src="./data/images/header-img1.png" alt="img1" class="img1" />
@@ -74,6 +83,8 @@
                   name="fullname"
                   id="fullname"
                   placeholder="Vui lòng nhập Họ tên của bạn"
+                  minlength="4"
+                  required
                 />
               </td>
             </tr>
@@ -87,6 +98,8 @@
                   name="email"
                   id="email"
                   placeholder="Vui lòng nhập địa chỉ email"
+                  onchange="checkMail(this)"
+                  required
                 />
               </td>
             </tr>
@@ -113,6 +126,8 @@
                   cols="50"
                   rows="7"
                   placeholder="Nội dung cần liên hệ"
+                  minlength="10"
+                  required
                 ></textarea>
               </td>
             </tr>

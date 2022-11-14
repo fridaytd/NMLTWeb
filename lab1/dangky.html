@@ -37,9 +37,18 @@
         </div>
 
         <div class="search">
-          <input type="text" placeholder="Nhập nội dung cần tìm ..." />
-          <i class="fa fa-search"></i>
-          <i class="fa fa-shopping-cart"></i>
+          <form action="./timkiem.html" method="get" name="search">
+            <input
+              type="text"
+              name="txt"
+              id="txt_search"
+              placeholder="Nhập nội dung cần tìm ..."
+              autocomplete="off"
+            />
+            <i class="fa fa-search" onclick="sent_data()"></i>
+            <i class="fa fa-shopping-cart"></i>
+          </form>
+          
         </div>
       </nav>
       <img src="./data/images/header-img1.png" alt="img1" class="img1" />
@@ -48,7 +57,11 @@
     </header>
     <main>
       <h1>ĐĂNG KÝ</h1>
+<<<<<<< HEAD
       <form id="dangKy" action="" method="post" enctype="multipart/form-data">
+=======
+      <form action="" method="post" enctype="multipart/form-data"  onsubmit="return(logonCheck(this))">
+>>>>>>> 202991f13a292f6b642ac71924406c35e007ea6e
         <fieldset class="form-container" >
           <table style="width: 500px;">
             <tr>
@@ -135,6 +148,7 @@
         ><img src="./data/images/top.png" alt="top" class="top"
       /></a>
     </footer>
+<<<<<<< HEAD
     <script src="./validator.js"></script>
     <script>
       Validator({
@@ -149,5 +163,8 @@
         ]
       })
     </script>
+=======
+    <script src="./script.js"></script>
+>>>>>>> 202991f13a292f6b642ac71924406c35e007ea6e
   </body>
 </html>
