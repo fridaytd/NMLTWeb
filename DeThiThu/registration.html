@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.png" alt="logo" id="logo" />
+      <img src="./images/logo2.png" alt="logo2" id="logo2" />
+      <p id="siteTitle">Khoa CNTT & TT</p>
+      <p id="siteTitle2">Hệ Thống Quản Lí Đào Tạo</p>
+    </header>
+    <nav>
+      <div id="menu">
+        <a href="./index.html">Trang chủ</a>|<a href="#">Giới thiệu</a>
+      </div>
+      <div id="login"><a href="#">Đăng nhập</a>|<a href="#">Đăng kí</a></div>
+    </nav>
+    <main>
+      <div id="leftSide">
+        <div class="group-box">
+          <div class="title">DANH MỤC</div>
+          <div class="leftMenu">
+            <ul>
+              <li><a href="#">Khoa - Viện</a></li>
+              <li><a href="#">Giảng viên</a></li>
+              <li><a href="#">Sinh viên</a></li>
+              <li><a href="#">Ngành đào tạo</a></li>
+              <li><a href="#">Lớp chuyên ngành</a></li>
+              <li><a href="#">Lớp học phần</a></li>
+              <li><a href="#">Môn học</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="group-box">
+          <div class="title">Menu</div>
+          <div class="leftMenu">
+            <ul>
+              <li><a href="#"> Link 1</a></li>
+              <li><a href="#"> Link 2</a></li>
+              <li><a href="#"> Link 3</a></li>
+              <li><a href="#"> Link 4</a></li>
+              <li><a href="#"> Link 5</a></li>
+              <li><a href="#"> Link 6</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="mainContent">
+        <div class="group-box">
+          <div class="title center">Thông tin đăng kí</div>
+          <div class="centerMenu">
+            <form action="#" method="post" id="form">
+              <table>
+                <tr>
+                  <td><label for="mssv">MSSV</label></td>
+                  <td><input type="text" name="mssv" id="mssv" /></td>
+                </tr>
+                <tr>
+                  <td><label for="name">Họ tên</label></td>
+                  <td><input type="text" name="name" id="name" /></td>
+                </tr>
+                <tr>
+                  <td><label for="sex">Giới tính</label></td>
+                  <td>
+                    <input type="radio" name="sex" id="sex" />Nam
+                    <input type="radio" name="sex" id="sex" />Nữ
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="birthday">Ngày sinh</label></td>
+                  <td><input type="date" name="birthday" id="bitrhday" /></td>
+                </tr>
+                <tr>
+                  <td><label for="queQuan">Quê quán</label></td>
+                  <td>
+                    <textarea
+                      name="queQuan"
+                      id="queQuan"
+                      cols="20"
+                      rows="2"
+                    ></textarea>
+                  </td>
+                </tr>
+                <tr>
+                    <td><label for="sdt">SĐT</label></td>
+                    <td><input type="text" name="sdt" id="sdt"></td>
+                </tr>
+                <tr>
+                   <td><label for="email">Email</label></td>
+                   <td><input type="email" name="email" id="email" placeholder="lequan@gmail.com"></td>
+                </tr>
+                <tr>
+                    <td><label for="avatar">Ảnh đại diện</label></td>
+                    <td><input type="file" name="avatar" id="avatar"></td>
+                </tr>
+                <tr>
+                    <td><label for="pass">Mật khẩu</label></td>
+                    <td><input type="password" name="pass" id="pass" placeholder="8- 20 kí tự"></td>
+                </tr>
+                <tr>
+                    <td><label for="passconfirm">Nhập lại MK</label></td>
+                    <td><input type="password" name="passconfirm" id="passconfirm"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td ><button type="submit">Đăng kí</button> <button type="reset">Hủy</button></td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>Copy right &COPY; 2020</footer>
+    <script src="./validator.js"></script>
+  </body>
+</html>
